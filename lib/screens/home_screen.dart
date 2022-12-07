@@ -11,7 +11,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  PosterContent pc = PosterContent(image_asset: 'images/black-panther.jpg');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,28 +25,80 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Expanded(
                   child: ReusableCard(
-                    cardChild: PosterContent(),
+                    cardChild: PosterContent(
+                      image_asset: 'black-panther.jpg',
+                      movie_name: 'Black Panther',
+                    ),
                     onPress: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => DescriptionPage(
-                                  // bmiResult: calc.calculateBMI(),
-                                  // resultText: calc.getResult(),
-                                  // interpretation: calc.getInterPretation(),
+                                    appBarTitle: 'Black Panther',
                                   )));
                     },
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    cardChild: PosterContent(),
+                    cardChild: PosterContent(
+                      image_asset: 'Beauty-Beast.jpg',
+                      movie_name: 'Beauty and The Beast',
+                    ),
+                    onPress: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => DescriptionPage(
+                                    appBarTitle: 'Beauty and The Beast',
+                                  )));
+                    },
+                  ),
+                ),
+                Expanded(
+                  child: ReusableCard(
+                    cardChild: PosterContent(
+                      image_asset: 'captain_marvel.jpg',
+                      movie_name: 'Captain Marvel',
+                    ),
+                    onPress: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => DescriptionPage(
+                                    appBarTitle: 'Captain Marvel',
+                                  )));
+                    },
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: ReusableCard(
+                    cardChild: PosterContent(
+                      image_asset: 'black-panther.jpg',
+                      movie_name: 'Black Panther',
+                    ),
                     onPress: () {},
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    cardChild: PosterContent(),
+                    cardChild: PosterContent(
+                      image_asset: 'black-panther.jpg',
+                      movie_name: 'Black Panther',
+                    ),
+                    onPress: () {},
+                  ),
+                ),
+                Expanded(
+                  child: ReusableCard(
+                    cardChild: PosterContent(
+                      image_asset: 'black-panther.jpg',
+                      movie_name: 'Black Panther',
+                    ),
                     onPress: () {},
                   ),
                 ),
@@ -57,41 +108,28 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Expanded(
                   child: ReusableCard(
-                    cardChild: PosterContent(),
+                    cardChild: PosterContent(
+                      image_asset: 'black-panther.jpg',
+                      movie_name: 'Black Panther',
+                    ),
                     onPress: () {},
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    cardChild: PosterContent(),
+                    cardChild: PosterContent(
+                      image_asset: 'black-panther.jpg',
+                      movie_name: 'Black Panther',
+                    ),
                     onPress: () {},
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    cardChild: PosterContent(),
-                    onPress: () {},
-                  ),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Expanded(
-                  child: ReusableCard(
-                    cardChild: PosterContent(),
-                    onPress: () {},
-                  ),
-                ),
-                Expanded(
-                  child: ReusableCard(
-                    cardChild: PosterContent(),
-                    onPress: () {},
-                  ),
-                ),
-                Expanded(
-                  child: ReusableCard(
-                    cardChild: PosterContent(),
+                    cardChild: PosterContent(
+                      image_asset: 'black-panther.jpg',
+                      movie_name: 'Black Panther',
+                    ),
                     onPress: () {},
                   ),
                 ),
@@ -101,19 +139,28 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Expanded(
                   child: ReusableCard(
-                    cardChild: PosterContent(),
+                    cardChild: PosterContent(
+                      image_asset: 'black-panther.jpg',
+                      movie_name: 'Black Panther',
+                    ),
                     onPress: () {},
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    cardChild: PosterContent(),
+                    cardChild: PosterContent(
+                      image_asset: 'black-panther.jpg',
+                      movie_name: 'Black Panther',
+                    ),
                     onPress: () {},
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    cardChild: PosterContent(),
+                    cardChild: PosterContent(
+                      image_asset: 'black-panther.jpg',
+                      movie_name: 'Black Panther',
+                    ),
                     onPress: () {},
                   ),
                 ),
