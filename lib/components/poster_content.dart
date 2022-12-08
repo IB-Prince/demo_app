@@ -15,4 +15,8 @@ class PosterContent extends StatelessWidget {
       ],
     );
   }
+  
+    getMovieName(){
+    return movie_name;
+  }
 }
